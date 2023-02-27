@@ -1,7 +1,5 @@
 #Import modules.
 
-# test test test
-
 import math
 import sympy
 import PySimpleGUI as sg
