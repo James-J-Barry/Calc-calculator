@@ -1,16 +1,12 @@
 #Import modules.
 
-# test test test
-
-import math
 import sympy
 import PySimpleGUI as sg
-import os.path
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-# Sets symbols for Sympy
+# Sets symbols for Sympy and expression for input
 
 x = sympy.Symbol("x")
 y = sympy.Symbol("y")
@@ -36,6 +32,8 @@ dpi = _VARS['pltFig'].get_dpi()
 size = (w*dpi, h*dpi)
 
 # Creates the Layout with PySimpleGUI.
+
+sg.theme('Kayak')
 
 first_column = [
     [
